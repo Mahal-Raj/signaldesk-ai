@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Explainable AI incident triage"><title>SignalDesk AI · Incident Intelligence</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<header><a class="brand" href="/">SIGNAL<span>DESK</span></a><div class="status"><i></i>MODEL ONLINE <b>v1.0</b></div></header>
+<main>
+  <section class="hero"><div class="eyebrow">AI INCIDENT INTELLIGENCE</div><h1>Turn alert noise into<br><em>decisions.</em></h1><p>Privacy-first triage that classifies incidents, routes responders, retrieves similar cases, and explains every prediction.</p><div class="hero-stats"><span><strong>6</strong> response domains</span><span><strong>&lt;100ms</strong> local inference</span><span><strong>0</strong> data sent externally</span></div></section>
+  <section class="workspace">
+    <div class="composer panel"><div class="panel-title"><span>01</span><h2>Incoming incident</h2><small>PII is redacted before inference</small></div><textarea id="incident" maxlength="4000">Production checkout requests are timing out. Postgres connection pool is exhausted and customers at admin@acme.com report failed payments from 10.20.4.18.</textarea><div class="samples"><span>Try:</span><button data-sample="Our canary release is crash looping after a failed configuration rollout in production.">Failed release</button><button data-sample="A production API token was exposed in a public build log. token=sk_live_example">Leaked secret</button><button data-sample="DNS lookups between services fail intermittently across availability zones.">Network fault</button></div><button id="analyze" class="primary">Analyze incident <b>↗</b></button><p id="message">Ready for analysis.</p></div>
+    <div id="result" class="result panel empty"><div class="radar"></div><p>Awaiting incident signal</p><small>The inference report will appear here</small></div>
+  </section>
+  <section class="architecture"><div><span>INGEST</span><b>Sanitize sensitive data</b></div><i>→</i><div><span>UNDERSTAND</span><b>TF-IDF + logistic model</b></div><i>→</i><div><span>ACT</span><b>Route + retrieve runbook</b></div></section>
+</main>
+<footer><span>BUILT FOR EXPLAINABLE OPERATIONS</span><span>MODEL CARD · EVALUATION · AUDITABLE OUTPUT</span></footer>
+<script src="/app.js"></script></body></html>
+
