@@ -10,7 +10,7 @@ SignalDesk is a working, privacy-first incident intelligence system. It converts
 - Explains predictions using positively weighted input features.
 - Retrieves semantically similar historical incidents and resolutions.
 - Exposes health, model metadata, and feedback endpoints.
-- Runs as a non-root, health-checked container with CI tests and Trivy scanning.
+- Runs as a non-root, health-checked container with CI tests, a container build, and blocking Trivy repository scanning.
 
 ## Run it
 
@@ -49,7 +49,7 @@ flowchart LR
 - `signaldesk/` - training data, model, retrieval, redaction, API, and evaluation
 - `web/` - responsive incident workspace
 - `tests/` - model behavior, privacy, retrieval, and validation tests
-- `.github/workflows/` - model verification and container security
+- `.github/workflows/` - model verification, container build, and dependency security
 
 ## Author
 
