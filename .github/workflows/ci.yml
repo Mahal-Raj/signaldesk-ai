@@ -18,9 +18,8 @@ jobs:
       - run: python -m unittest discover -v
       - run: python -m signaldesk.evaluate
       - run: docker build -t signaldesk:${{ github.sha }} .
-      - uses: aquasecurity/trivy-action@0.29.0
+      - uses: aquasecurity/trivy-action@0.28.0
         with:
           image-ref: signaldesk:${{ github.sha }}
           severity: CRITICAL,HIGH
           exit-code: "1"
-
