@@ -1,0 +1,114 @@
+{
+  "method": "5-fold stratified cross-validation of hybrid statistical + domain model",
+  "samples": 60,
+  "accuracy": 0.8167,
+  "classificationReport": {
+    "authentication": {
+      "precision": 0.7272727272727273,
+      "recall": 0.8,
+      "f1-score": 0.7619047619047619,
+      "support": 10.0
+    },
+    "compute": {
+      "precision": 0.8888888888888888,
+      "recall": 0.8,
+      "f1-score": 0.8421052631578947,
+      "support": 10.0
+    },
+    "database": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 10.0
+    },
+    "deployment": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 10.0
+    },
+    "network": {
+      "precision": 0.7272727272727273,
+      "recall": 0.8,
+      "f1-score": 0.7619047619047619,
+      "support": 10.0
+    },
+    "security": {
+      "precision": 0.7777777777777778,
+      "recall": 0.7,
+      "f1-score": 0.7368421052631579,
+      "support": 10.0
+    },
+    "accuracy": 0.8166666666666667,
+    "macro avg": {
+      "precision": 0.8257575757575757,
+      "recall": 0.8166666666666668,
+      "f1-score": 0.8167894483683957,
+      "support": 60.0
+    },
+    "weighted avg": {
+      "precision": 0.8257575757575758,
+      "recall": 0.8166666666666667,
+      "f1-score": 0.8167894483683956,
+      "support": 60.0
+    }
+  },
+  "labels": [
+    "authentication",
+    "compute",
+    "database",
+    "deployment",
+    "network",
+    "security"
+  ],
+  "confusionMatrix": [
+    [
+      8,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      8,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      8,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      8,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      7
+    ]
+  ]
+}
