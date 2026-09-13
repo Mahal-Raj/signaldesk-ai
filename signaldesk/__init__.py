@@ -1,0 +1,2 @@
+"""SignalDesk incident intelligence package."""
+
